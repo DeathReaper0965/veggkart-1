@@ -1,7 +1,13 @@
 <resources>
     <string name="app_name">VeggKart</string>
+    <string name="Cart">Cart</string>
+    <string name="Delivery_Address">Delivery Address</string>
+    <string name="Contact_us">Contact_us</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
 
     <!-- API -->
-    <string name="API_BASE_URL">http://192.168.1.113:99</string>
-    <string name="API_JSON_URL">/vksite/api/crud_api.php</string>
+    <string name="API_BASE_URL">http://nullsquad.in</string>
+    <string name="API_JSON_URL">/api/crud_api.php</string>
 </resources>

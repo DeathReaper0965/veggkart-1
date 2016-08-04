@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.prince.vegkart.LoginAct">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailTextInputLayout"
+        android:layout_marginTop="20dp">
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/emailText"
+            android:inputType="textEmailAddress"
+            android:hint="Email Address"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/passwordTextInputLayout">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/passwordText"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginButton"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_drawable"
+        android:onClick="submit"
+        android:text="Login"
+        android:textColor="#FFF"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:weightSum="3">
+        <TextView
+            android:id="@+id/forgotPasswordTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp"
+            android:onClick="onClick"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text=" or "
+            android:textSize="16sp"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/newUserTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:textAlignment="center"
+            android:text="New User? Register here!"
+            android:onClick="onClick"
+            android:textSize="16sp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login using: "
+        android:textAlignment="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:weightSum="2.15">
+        <ImageButton
+            android:id="@+id/sign_in_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/googlep"
+            android:backgroundTint="@color/transparent"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:layout_weight="1.15"/>
+        <ImageButton
+            android:id="@+id/facebookImageBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/facebook"
+            android:backgroundTint="@color/transparent"
+            android:clickable="true"
+            android:onClick="onImageClick"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/linearLayoutX1"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:divider="#D2D2D2"
+    android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/imageProduct1"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="30"
+        android:minHeight="10dp"
+        android:minWidth="10dp"
+        android:src="@android:drawable/ic_menu_gallery" />
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="60"
+        android:minHeight="10px"
+        android:minWidth="10px"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+        <TextView
+            android:id="@+id/textViewX1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="80"
+            android:gravity="left"
+            android:text="Text1"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/textViewX2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="80"
+            android:gravity="left"
+            android:text="Text2" />
+        <TextView
+            android:id="@+id/textViewX3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="80"
+            android:gravity="right"
+            android:text="Text3"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="italic" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:minHeight="25px"
+        android:minWidth="25px"
+        android:orientation="vertical">
+        <NumberPicker
+            android:id="@+id/numPicker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="10dp"
+            android:minWidth="10dp"
+            android:saveEnabled="true" />
+    </LinearLayout>
+</LinearLayout>
